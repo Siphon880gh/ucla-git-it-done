@@ -21,3 +21,7 @@ See list of all open issues:
 Search for featured repos
 
 - Users can click on a language button to see a list of featured repos that use that coding language.- Examples: HTML, CSS, JavaScript.  - The list of featured repos will look exactly like the list of user repos.
+
+Github Public API
+---
+https://docs.github.com/en/free-pro-team@latest/rest/reference/repos

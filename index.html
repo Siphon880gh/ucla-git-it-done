@@ -18,9 +18,35 @@
     </p>
   </header>
 
+  
 
   <main class="flex-row justify-space-between">
 
+  <!-- TO REVIEW: Mobile first design; This is a coding philosophy. We start off the design on mobile, then add media queries for the bigger devices. 
+    So there's col-12 which is the default making the row taking up 100% of the width. It would remain the default on all devices, if it hadn't been
+    the exceptions to the rule which was md-4 or md-8 with min-width: 768px. So media queries were added for the exceptions (bigger devices) 
+    DOM: .flex-row.justify-space-between>.col-12.col-md-4+.col-12.col-md-8
+  -->
+    <div class="col-12 col-md-4">
+      <div class="card">
+
+        <h3 class="card-header text-uppercase">Search By User</h3>
+      
+        <form class="card-body" id="user-form">
+      
+          <label class="form-label" for="username">Username</label>
+      
+          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+      
+          <button type="submit" class="btn">Get User</button>
+      
+        </form>
+
+    </div> <!-- left column -->
+    <div class="col-12 col-md-8">
+
+    </div> <!-- right column -->
+  </div>
   </main>
 
   <script src="./assets/js/homepage.js"></script>

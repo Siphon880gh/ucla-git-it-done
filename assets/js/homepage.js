@@ -70,7 +70,8 @@ var displayRepos = function(repos, searchTerm) {
 
         var repoEl = document.createElement("div");
 
-        repoEl.classList = "list-item flex-row justify-space-between align-center";
+        repoEl.classList = "list-item flex-row justify-space-between align-center clickable";
+        repoEl.onclick = () => { window.location.href = "single-repo.html?repo=" + repoName }
 
 
         // create a span element to hold repository name

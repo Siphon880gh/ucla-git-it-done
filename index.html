@@ -2,56 +2,59 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Git it Done</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Git it Done</title>
 </head>
 
 <body class="flex-column min-100-vh">
-  <header class="hero">
-    <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
-    <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
-    </p>
-  </header>
+    <header class="hero">
+        <h1 class="app-title"><i class="fab fa-github"></i> Git it Done!</h1>
+        <p>Search for a GitHub user or click on a language to see a list of repositories and how many open issues they have!
+        </p>
+    </header>
 
-  
 
-  <main class="flex-row justify-space-between">
 
-  <!-- TO REVIEW: Mobile first design; This is a coding philosophy. We start off the design on mobile, then add media queries for the bigger devices. 
+    <main class="flex-row justify-space-between">
+
+        <!-- TO REVIEW: Mobile first design; This is a coding philosophy. We start off the design on mobile, then add media queries for the bigger devices. 
     So there's col-12 which is the default making the row taking up 100% of the width. It would remain the default on all devices, if it hadn't been
     the exceptions to the rule which was md-4 or md-8 with min-width: 768px. So media queries were added for the exceptions (bigger devices) 
     DOM: .flex-row.justify-space-between>.col-12.col-md-4+.col-12.col-md-8
   -->
-    <div class="col-12 col-md-4">
-      <div class="card">
+        <div class="col-12 col-md-4">
+            <div class="card">
 
-        <h3 class="card-header text-uppercase">Search By User</h3>
-      
-        <form class="card-body" id="user-form">
-      
-          <label class="form-label" for="username">Username</label>
-      
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-      
-          <button type="submit" class="btn">Get User</button>
-      
-        </form>
-      </div> <!-- card -->
+                <h3 class="card-header text-uppercase">Search By User</h3>
 
-    </div> <!-- left column -->
-    <div class="col-12 col-md-8">
-      <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
-      <div id="repos-container" class="list-group"></div>
-    </div> <!-- right column -->
-  </div>
-  </main>
+                <form class="card-body" id="user-form">
 
-  <script src="./assets/js/homepage.js"></script>
+                    <label class="form-label" for="username" placeholder="E.g. facebook">Username</label>
+
+                    <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+
+                    <button type="submit" class="btn">Get User</button>
+
+                </form>
+            </div>
+            <!-- card -->
+
+        </div>
+        <!-- left column -->
+        <div class="col-12 col-md-8">
+            <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
+            <div id="repos-container" class="list-group"></div>
+        </div>
+        <!-- right column -->
+        </div>
+    </main>
+
+    <script src="./assets/js/homepage.js"></script>
 
 </body>
 
